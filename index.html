@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+.container{
+
+ margin: 20px auto;
+ padding: 20px;
+ border:  1px solid rgb(219, 210, 210);
+ 
+
+}
+ p{
+   
+    background-color: rgb(156, 27, 27);
+    color: white;
+  
+
+ }
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+Conteúdo HTML DO DIV
+
+
+</div>
+
+
+
+<script>
+
+let div = document.querySelector('.container')
+// Adicionar texto antes do div
+ /* div.before ('Antes do DIV') // O Conteúdo foi adicionado antes do div
+// Adicionar dentro do div mas no inicio
+div.prepend ('Dentro da div no inicio') // conteúdo adicionado no div no inicio
+ div.append('No final do DIV') //Conteúdo no final
+ div.after('Após o div') // Conteúdo após 
+*/
+ let p1 = document.createElement('p') //Criando parágrafo
+ p1.innerText = 'Pellentesque at neque a diam venenatis viverra suscipit vitae arcu. Nulla facilisi. Vivamus purus nisi, bibendum vel lectus vitae, tristique molestie justo. Sed tempus luctus posuere. Nulla sagittis eros fringilla eleifend vehicula. Pellentesque efficitur leo et tempus suscipit. Sed in ligula vehicula, laoreet libero in, dictum urna.Nunc malesuada dui sed tempor iaculis. Donec et egestas eros. Nulla nec mattis velit, sit amet aliquet mauris. Mauris purus felis, ultricies et est eget, cursus efficitur eros. Quisque dignissim, ipsum eget semper dictum, diam ex vestibulum dolor, sed pharetra lorem lacus non orci. Nam blandit ex vel turpis dignissim, sit amet porttitor mi rhoncus. Sed eu faucibus est, quis pellentesque eros. Nulla vehicula facilisis semper. Mauris at porttitor dui. Nulla in sagittis magna, ut volutpat ipsum.' // Criando o conteúdo do parágrafo 
+ 
+ div.prepend(p1) // chamando o paragráfo dentro da div
+ let p2 = document.createElement('p') //Criando parágrafo
+ p2.innerText = 'Pellentesque at neque a diam venenatis viverra suscipit vitae arcu. Nulla facilisi. Vivamus purus nisi, bibendum vel lectus vitae, tristique molestie justo. Sed tempus luctus posuere. Nulla sagittis eros fringilla eleifend vehicula. Pellentesque efficitur leo et tempus suscipit. Sed in ligula vehicula, laoreet libero in, dictum urna.Nunc malesuada dui sed tempor iaculis. Donec et egestas eros. Nulla nec mattis velit, sit amet aliquet mauris. Mauris purus felis, ultricies et est eget, cursus efficitur eros. Quisque dignissim, ipsum eget semper dictum, diam ex vestibulum dolor, sed pharetra lorem lacus non orci. Nam blandit ex vel turpis dignissim, sit amet porttitor mi rhoncus. Sed eu faucibus est, quis pellentesque eros. Nulla vehicula facilisis semper. Mauris at porttitor dui. Nulla in sagittis magna, ut volutpat ipsum.' // Criando o conteúdo do parágrafo 
+ 
+ div.append(p2) // chamando o paragráfo dentro da div
+
+
+
+
+</script>
+
+
+</body>
